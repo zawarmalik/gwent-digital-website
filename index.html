@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design Newport | Gwent Digital — Websites & Automation for Local Businesses</title>
+<meta name="description" content="Web design and business automation for Newport & Gwent small businesses. Fixed pricing, fast turnaround, one point of contact. Get a free website audit.">
+<meta name="author" content="Gwent Digital">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gwentdigital.co.uk/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gwent Digital">
+<meta property="og:title" content="Web Design Newport | Gwent Digital — Websites & Automation for Local Businesses">
+<meta property="og:description" content="Websites & automation for Newport's independent businesses. Fixed pricing, no jargon, one point of contact. Free website audit.">
+<meta property="og:url" content="https://gwentdigital.co.uk/">
+<meta property="og:image" content="https://gwentdigital.co.uk/assets/brand/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gwent Digital — Websites & Automation for Newport's Independent Businesses">
+<meta name="twitter:description" content="Fixed pricing, fast turnaround, one point of contact. Free website audit.">
+<meta name="twitter:image" content="https://gwentdigital.co.uk/assets/brand/og-image.jpg">
+
+<!-- Favicon: inline SVG works immediately; swap in the real favicon set (1000002614-based) when ready -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E2761'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='bold' fill='%23C9A24B' text-anchor='middle'%3EGD%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Gwent Digital",
+  "image": "https://gwentdigital.co.uk/assets/brand/og-image.jpg",
+  "url": "https://gwentdigital.co.uk/",
+  "email": "hello@gwentdigital.co.uk",
+  "telephone": "+447405376702",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Newport",
+    "addressRegion": "Wales",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Newport", "Gwent", "South Wales"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Fix-Up" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Website Build" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Automation" } }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --navy:#1E2761;
+  --navy-light:#2b3579;
+  --navy-dark:#141a47;
+  --ice:#CADCFC;
+  --ice-soft:#e7f0ff;
+  --gold:#C9A24B;
+  --gold-light:#ddc07c;
+  --gold-dark:#a9843a;
+  --ink:#1b1f2e;
+  --gray:#5b6270;
+  --white:#ffffff;
+  --radius:14px;
+  --shadow-sm:0 2px 10px rgba(30,39,97,0.08);
+  --shadow-md:0 12px 32px rgba(30,39,97,0.14);
+  --shadow-gold:0 12px 32px rgba(201,162,75,0.25);
+  --maxw:1180px;
+  --font-head:Georgia,"Times New Roman",serif;
+  --font-body:Calibri,"Segoe UI","Trebuchet MS",Helvetica,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:var(--font-head);
+  color:var(--navy);
+  line-height:1.2;
+  margin:0 0 .5em;
+}
+p{margin:0 0 1em;}
+a{color:inherit;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.skip-link{position:absolute;left:8px;top:-60px;background:var(--gold);color:var(--navy);padding:10px 16px;border-radius:8px;z-index:2000;font-weight:bold;transition:top .2s;}
+.skip-link:focus{top:8px;}
+
+section{padding:88px 0;}
+.section-label{
+  display:inline-block;
+  font-family:var(--font-body);
+  font-size:.78rem;
+  font-weight:bold;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+  background:var(--ice-soft);
+  padding:6px 14px;
+  border-radius:999px;
+  margin-bottom:14px;
+}
+.section-head{max-width:680px;margin:0 auto 48px;text-align:center;}
+.section-head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);position:relative;display:inline-block;}
+.section-head p{color:var(--gray);font-size:1.05rem;}
+.underline{
+  position:relative;
+  display:inline-block;
+}
+.underline::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:-8px;
+  height:4px;width:100%;
+  background:var(--gold);
+  border-radius:4px;
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .7s cubic-bezier(.4,0,.2,1);
+}
+.reveal.in-view .underline::after{transform:scaleX(1);}
+
+/* Reveal-on-scroll: only hides content when JS is available */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.js .reveal.in-view{opacity:1;transform:translateY(0);}
+.js .reveal-stagger > *{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;}
+.js .reveal-stagger.in-view > *{opacity:1;transform:translateY(0);}
+.js .reveal-stagger.in-view > *:nth-child(1){transition-delay:.05s;}
+.js .reveal-stagger.in-view > *:nth-child(2){transition-delay:.15s;}
+.js .reveal-stagger.in-view > *:nth-child(3){transition-delay:.25s;}
+.js .reveal-stagger.in-view > *:nth-child(4){transition-delay:.35s;}
+.js .reveal-stagger.in-view > *:nth-child(5){transition-delay:.45s;}
+.js .reveal-stagger.in-view > *:nth-child(6){transition-delay:.55s;}
+@media (prefers-reduced-motion: reduce){
+  .js .reveal,.js .reveal-stagger > *{opacity:1!important;transform:none!important;transition:none!important;}
+  .underline::after{transition:none!important;transform:scaleX(1)!important;}
+  html{scroll-behavior:auto;}
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;}
+}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--font-body);font-weight:bold;font-size:1rem;
+  padding:14px 28px;border-radius:10px;border:2px solid transparent;
+  text-decoration:none;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.btn:active{transform:translateY(1px);}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:var(--shadow-gold);}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,.6);}
+.btn-outline:hover{background:rgba(255,255,255,.12);border-color:var(--white);transform:translateY(-2px);}
+.btn-navy{background:var(--navy);color:var(--white);}
+.btn-navy:hover{background:var(--navy-light);transform:translateY(-2px);}
+.btn-block{width:100%;}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;top:0;z-index:1000;
+  background:var(--white);
+  border-bottom:1px solid rgba(30,39,97,.06);
+  transition:box-shadow .25s ease;
+}
+.navbar.scrolled{box-shadow:var(--shadow-sm);}
+.nav-inner{
+  max-width:var(--maxw);margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;justify-content:space-between;
+  height:76px;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.brand img.logo-img{height:40px;width:auto;}
+.brand svg.logo-fallback{height:40px;width:40px;}
+.brand-name{font-family:var(--font-head);font-weight:bold;font-size:1.25rem;color:var(--navy);}
+.nav-links{display:flex;align-items:center;gap:8px;list-style:none;margin:0;padding:0;}
+.nav-links a:not(.btn){
+  display:inline-block;padding:10px 14px;text-decoration:none;color:var(--navy);
+  font-weight:600;border-radius:8px;transition:background .18s ease,color .18s ease;
+}
+.nav-links a:not(.btn):hover{background:var(--ice-soft);color:var(--navy);}
+.nav-cta{margin-left:6px;}
+.hamburger{
+  display:none;background:none;border:none;cursor:pointer;padding:8px;
+  width:44px;height:44px;align-items:center;justify-content:center;border-radius:8px;
+}
+.hamburger:hover{background:var(--ice-soft);}
+.hamburger svg{width:26px;height:26px;}
+.hamburger .icon-close{display:none;}
+.hamburger.open .icon-open{display:none;}
+.hamburger.open .icon-close{display:block;}
+
+.mobile-panel{
+  display:none;
+  position:fixed;top:76px;left:0;right:0;bottom:0;
+  background:var(--white);z-index:999;
+  overflow-y:auto;
+  transform:translateY(-8px);opacity:0;
+  transition:transform .22s ease,opacity .22s ease;
+  pointer-events:none;
+}
+.mobile-panel.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+.mobile-panel ul{list-style:none;margin:0;padding:16px;}
+.mobile-panel li{border-bottom:1px solid var(--ice-soft);}
+.mobile-panel a{display:block;padding:16px 8px;text-decoration:none;color:var(--navy);font-weight:600;font-size:1.1rem;}
+.mobile-panel .nav-cta{margin:16px 8px;}
+
+@media (max-width:860px){
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .mobile-panel.open{display:block;}
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  background:var(--navy);
+  color:var(--white);
+  padding:120px 0 84px;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23CADCFC' stroke-opacity='0.16' stroke-width='1'%3E%3Ccircle cx='60' cy='60' r='40'/%3E%3Cpath d='M0 60 H120 M60 0 V120'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:120px 120px;
+  pointer-events:none;
+}
+.hero-inner{position:relative;max-width:760px;margin:0 auto;text-align:center;}
+.hero h1{color:var(--white);font-size:clamp(2rem,5vw,3.2rem);margin-bottom:.45em;}
+.hero .subline{font-size:1.2rem;color:var(--ice);max-width:640px;margin:0 auto 32px;}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:34px;}
+.trust-strip{
+  font-size:.92rem;color:var(--ice);
+  border-top:1px solid rgba(255,255,255,.18);
+  padding-top:20px;display:inline-block;
+}
+
+/* PROBLEMS */
+.problems{background:var(--ice-soft);}
+.problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.problem-card{
+  background:var(--white);border-radius:var(--radius);padding:28px 22px;
+  box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease;
+}
+.problem-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+.problem-card .icon-wrap{
+  width:52px;height:52px;border-radius:12px;background:var(--navy);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+}
+.problem-card svg{width:26px;height:26px;stroke:var(--gold);}
+.problem-card .pain{font-weight:bold;color:var(--navy);margin-bottom:8px;}
+.problem-card .fix{color:var(--gray);font-size:.96rem;margin:0;}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch;}
+.service-card{
+  border:1px solid #e7e9f2;border-radius:var(--radius);padding:32px 26px;
+  display:flex;flex-direction:column;background:var(--white);
+  box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease;
+}
+.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+.service-card .icon-wrap{
+  width:56px;height:56px;border-radius:14px;background:var(--ice-soft);
+  display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+}
+.service-card svg{width:28px;height:28px;stroke:var(--navy);}
+.service-card h3{font-size:1.35rem;margin-bottom:4px;}
+.service-price{font-family:var(--font-head);font-size:1.5rem;color:var(--gold-dark);font-weight:bold;margin:8px 0 2px;}
+.service-turn{color:var(--gray);font-size:.9rem;margin-bottom:16px;}
+.check-list{list-style:none;margin:0 0 18px;padding:0;flex-grow:1;}
+.check-list li{display:flex;gap:10px;margin-bottom:10px;font-size:.96rem;align-items:flex-start;}
+.check-list svg{flex:none;width:18px;height:18px;stroke:var(--gold-dark);margin-top:2px;}
+.addon-note{font-size:.86rem;color:var(--gray);background:var(--ice-soft);padding:10px 12px;border-radius:8px;margin-bottom:16px;}
+.best-for{font-size:.9rem;color:var(--navy);font-style:italic;margin-bottom:18px;}
+.best-for strong{font-style:normal;}
+
+/* OUR WORK */
+.work{background:var(--ice-soft);}
+.featured-card{
+  position:relative;border-radius:18px;padding:3px;
+  margin-bottom:48px;
+  background:linear-gradient(120deg,var(--gold-dark),var(--gold),var(--gold-light),var(--gold-dark));
+  background-size:300% 300%;
+  animation:shimmer 6s ease infinite;
+  box-shadow:var(--shadow-md);
+}
+@media (prefers-reduced-motion: reduce){.featured-card{animation:none;}}
+@keyframes shimmer{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.featured-card-inner{
+  background:var(--white);border-radius:16px;padding:40px;
+  display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;
+}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.78rem;font-weight:bold;letter-spacing:.05em;text-transform:uppercase;
+  padding:6px 12px;border-radius:999px;
+}
+.badge-live{background:#1f8a4c;color:#fff;}
+.badge-studio{background:var(--navy);color:var(--ice);}
+.badge-portfolio{background:var(--gold);color:var(--navy);}
+.featured-card h3{font-size:1.7rem;margin:14px 0 12px;}
+.story-steps{list-style:none;margin:0 0 20px;padding:0;}
+.story-steps li{margin-bottom:10px;font-size:.98rem;}
+.story-steps b{color:var(--gold-dark);}
+.mock-browser{
+  border-radius:12px;overflow:hidden;border:1px solid #e2e6f2;box-shadow:var(--shadow-sm);
+  transition:transform .35s ease;
+}
+.featured-card-inner:hover .mock-browser,.story-card:hover .mock-browser{transform:scale(1.035);}
+.mock-bar{background:#eef1f8;padding:9px 12px;display:flex;gap:6px;}
+.mock-bar span{width:10px;height:10px;border-radius:50%;background:#d3d8e6;}
+.mock-body{padding:26px 20px;min-height:170px;display:flex;flex-direction:column;justify-content:center;gap:10px;}
+.mock-line{height:10px;border-radius:5px;background:var(--ice);}
+.mock-line.short{width:40%;}
+.mock-line.med{width:70%;}
+.mock-line.wide{width:100%;}
+.mock-block{height:52px;border-radius:8px;background:var(--navy);margin-top:6px;}
+.mock-block.gold{background:var(--gold);}
+.mock-photo{width:100%;height:190px;object-fit:cover;display:block;}
+
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.story-card{
+  background:var(--white);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);transition:transform .22s ease,box-shadow .22s ease;
+  display:flex;flex-direction:column;
+}
+.story-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);}
+.story-card .mock-browser{border-radius:0;border:none;}
+.story-card-body{padding:22px 22px 26px;display:flex;flex-direction:column;flex-grow:1;}
+.story-card h4{font-size:1.15rem;margin:12px 0 8px;}
+.story-card .challenge{font-size:.9rem;color:var(--gray);margin-bottom:10px;}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 16px;}
+.chip{background:var(--ice-soft);color:var(--navy);font-size:.78rem;font-weight:bold;padding:5px 10px;border-radius:999px;}
+.story-card .story-link{margin-top:auto;font-weight:bold;color:var(--gold-dark);text-decoration:none;font-size:.94rem;}
+.story-card .story-link:hover{text-decoration:underline;}
+.story-result{margin-top:auto;display:flex;align-items:center;gap:8px;font-weight:bold;color:var(--gold-dark);font-size:.94rem;}
+.story-result svg{flex:none;width:16px;height:16px;stroke:var(--gold-dark);}
+.portfolio-note{font-size:.85rem;color:var(--gray);margin-top:2px;}
+
+/* PROCESS */
+.process-line{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;margin-bottom:28px;
+}
+.process-line::before{
+  content:"";position:absolute;top:28px;left:12%;right:12%;height:2px;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 18px);
+}
+.process-step{position:relative;text-align:center;padding:0 8px;}
+.step-num{
+  width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-head);
+  font-size:1.4rem;font-weight:bold;margin:0 auto 16px;position:relative;z-index:2;
+  box-shadow:var(--shadow-sm);
+}
+.process-step h3{font-size:1.1rem;margin-bottom:8px;}
+.process-step p{color:var(--gray);font-size:.94rem;}
+.process-footer{text-align:center;font-family:var(--font-head);font-size:1.15rem;color:var(--navy);font-style:italic;}
+
+@media (max-width:860px){
+  .process-line{grid-template-columns:1fr;gap:36px;}
+  .process-line::before{display:none;}
+}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start;}
+.price-card{
+  border:1px solid #e7e9f2;border-radius:var(--radius);padding:32px 26px;background:var(--white);
+  box-shadow:var(--shadow-sm);position:relative;display:flex;flex-direction:column;height:100%;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.price-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+.price-card.popular{border:2px solid var(--gold);transform:scale(1.04);box-shadow:var(--shadow-gold);}
+.price-card.popular:hover{transform:scale(1.04) translateY(-6px);}
+.ribbon{
+  position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+  background:var(--gold);color:var(--navy);font-weight:bold;font-size:.82rem;
+  padding:6px 16px;border-radius:999px;box-shadow:var(--shadow-gold);white-space:nowrap;
+}
+.price-card h3{font-size:1.25rem;}
+.price-card .service-price{margin:6px 0 0;}
+.price-card .service-turn{margin-bottom:18px;}
+.pricing-note{text-align:center;color:var(--gray);font-size:.92rem;max-width:640px;margin:36px auto 0;}
+
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;}
+.about-mark{
+  width:100%;aspect-ratio:1;max-width:320px;margin:0 auto;border-radius:28px;
+  background:var(--navy);display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-md);
+}
+.about-mark svg{width:55%;height:55%;}
+.about-text h2{font-size:clamp(1.6rem,3vw,2.2rem);}
+.stat-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;}
+.stat-chip{
+  background:var(--ice-soft);color:var(--navy);font-weight:bold;font-size:.9rem;
+  padding:10px 16px;border-radius:999px;
+}
+
+/* FAQ */
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{border-bottom:1px solid #e7e9f2;}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;
+  padding:22px 4px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:var(--font-head);font-size:1.08rem;color:var(--navy);font-weight:bold;
+}
+.faq-q .plus{flex:none;width:22px;height:22px;position:relative;}
+.faq-q .plus::before,.faq-q .plus::after{
+  content:"";position:absolute;background:var(--gold-dark);border-radius:2px;transition:transform .25s ease;
+}
+.faq-q .plus::before{left:0;top:50%;width:100%;height:3px;transform:translateY(-50%);}
+.faq-q .plus::after{top:0;left:50%;width:3px;height:100%;transform:translateX(-50%);}
+.faq-item.open .plus::after{transform:translateX(-50%) rotate(90deg);opacity:0;}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;
+  color:var(--gray);font-size:.98rem;
+}
+.faq-item.open .faq-a{padding-bottom:22px;}
+.faq-a p{margin:0;}
+
+/* CONTACT */
+.contact{background:var(--navy);color:var(--white);}
+.contact .section-head p{color:var(--ice);}
+.contact-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;}
+.contact-form{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-md);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+.field label{font-weight:bold;font-size:.9rem;color:var(--navy);}
+.field input,.field select,.field textarea{
+  font-family:inherit;font-size:1rem;padding:12px 14px;border:1.5px solid #d9dceb;
+  border-radius:8px;color:var(--ink);background:var(--white);
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--gold);border-color:var(--gold);}
+.field-check{display:flex;align-items:flex-start;gap:10px;font-size:.86rem;color:var(--gray);margin-bottom:18px;}
+.field-check input{margin-top:3px;}
+.form-status{font-size:.9rem;font-weight:bold;margin-bottom:14px;display:none;}
+.form-status.show{display:block;}
+.form-status.ok{color:#1f8a4c;}
+.form-status.err{color:#c0392b;}
+.contact-side{display:flex;flex-direction:column;gap:20px;}
+.contact-option{
+  display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:18px;
+}
+.contact-option .icon-wrap{
+  width:42px;height:42px;border-radius:10px;background:var(--gold);flex:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.contact-option svg{width:20px;height:20px;stroke:var(--navy);}
+.contact-option a{color:var(--white);font-weight:bold;text-decoration:none;}
+.contact-option a:hover{text-decoration:underline;}
+.contact-option p{margin:0;color:var(--ice);font-size:.92rem;}
+
+/* FOOTER */
+footer{background:var(--navy-dark);color:var(--ice);padding:64px 0 28px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px;}
+.footer-brand .brand-name{color:var(--white);}
+.footer-brand p{color:var(--ice);font-size:.92rem;margin-top:12px;max-width:280px;}
+footer h4{color:var(--white);font-family:var(--font-body);font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;}
+footer ul{list-style:none;margin:0;padding:0;}
+footer li{margin-bottom:10px;}
+footer a{color:var(--ice);text-decoration:none;font-size:.94rem;}
+footer a:hover{text-decoration:underline;color:var(--white);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:22px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  font-size:.85rem;color:rgba(202,220,252,.75);
+}
+.footer-bottom a{color:rgba(202,220,252,.9);}
+
+/* MODAL */
+.modal-overlay{
+  display:none;position:fixed;inset:0;background:rgba(20,26,71,.6);z-index:2000;
+  align-items:center;justify-content:center;padding:24px;
+}
+.modal-overlay.open{display:flex;}
+.modal{
+  background:var(--white);border-radius:var(--radius);max-width:640px;width:100%;
+  max-height:82vh;overflow-y:auto;padding:36px;position:relative;box-shadow:var(--shadow-md);
+}
+.modal h2{margin-bottom:14px;}
+.modal h3{font-size:1.05rem;margin-top:20px;}
+.modal p,.modal li{font-size:.95rem;color:var(--gray);}
+.modal-close{
+  position:absolute;top:18px;right:18px;background:var(--ice-soft);border:none;
+  width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;
+}
+.modal-close svg{width:18px;height:18px;stroke:var(--navy);}
+
+/* RESPONSIVE */
+@media (max-width:1024px){
+  .featured-card-inner{grid-template-columns:1fr;}
+  .about-wrap{grid-template-columns:1fr;}
+  .about-mark{max-width:220px;}
+}
+@media (max-width:900px){
+  .problem-grid,.services-grid,.work-grid,.pricing-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .contact-wrap{grid-template-columns:1fr;}
+  .price-card.popular{transform:none;}
+  .price-card.popular:hover{transform:translateY(-6px);}
+}
+@media (max-width:600px){
+  section{padding:64px 0;}
+  .problem-grid,.services-grid,.work-grid,.pricing-grid,.footer-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .hero{padding:104px 0 64px;}
+  .featured-card-inner{padding:24px;}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Gwent Digital — home">
+      <img src="1000002614.png" alt="" aria-hidden="true" class="logo-img" height="40"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+      <svg class="logo-fallback" aria-hidden="true" style="display:none" viewBox="0 0 64 64">
+        <rect width="64" height="64" rx="14" fill="#1E2761"/>
+        <text x="32" y="42" font-family="Georgia,serif" font-size="26" font-weight="bold" fill="#C9A24B" text-anchor="middle">GD</text>
+      </svg>
+      <span class="brand-name">Gwent Digital</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-gold nav-cta" href="#contact">Free Website Audit</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="#1E2761" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="#1E2761" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-panel" id="mobile-panel" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold btn-block nav-cta" href="#contact">Free Website Audit</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container hero-inner reveal">
+    <h1>Websites &amp; Automation for Newport&rsquo;s Independent Businesses.</h1>
+    <p class="subline">We manage your whole website or automation project ourselves &mdash; one point of contact, fast turnaround, and fair fixed prices agreed before we start.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-gold">Get a Free Audit</a>
+      <a href="#work" class="btn btn-outline">See Our Work</a>
+    </div>
+    <div class="trust-strip">Newport based &middot; Fixed pricing &middot; No jargon &middot; GDPR compliant</div>
+  </div>
+</section>
+
+<!-- PROBLEMS WE FIX -->
+<section class="problems" id="problems">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Common headaches</span>
+      <h2 class="underline">Sound familiar?</h2>
+      <p>These are the four problems we hear most from Newport shop, trade and restaurant owners.</p>
+    </div>
+    <div class="problem-grid reveal-stagger">
+      <div class="problem-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <p class="pain">Your website takes forever to load &mdash; and customers leave before it finishes.</p>
+        <p class="fix">We fix this by stripping out bloat and optimising images and code for fast loading.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/><path d="M15 15l4 4M19 15l-4 4"/></svg></div>
+        <p class="pain">Your contact or booking form doesn&rsquo;t actually work &mdash; enquiries vanish into thin air.</p>
+        <p class="fix">We fix this by testing every form end-to-end and making sure it reaches you properly.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M21 21l-5.2-5.2"/></svg></div>
+        <p class="pain">You&rsquo;re invisible on Google &mdash; customers search for you and find a competitor instead.</p>
+        <p class="fix">We fix this by setting up and linking your Google Business Profile with basic local SEO.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l2-4-5-2-2 2c-2-1-4-3-5-5l2-2-2-5z"/></svg></div>
+        <p class="pain">You&rsquo;re still taking every booking over the phone &mdash; even mid-job, elbow-deep in work.</p>
+        <p class="fix">We fix this by adding online booking, WhatsApp auto-replies, or a form that works without you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Services</span>
+      <h2 class="underline">Three ways we can help</h2>
+      <p>Pick a starting point &mdash; we&rsquo;ll recommend the right one for you at your free audit.</p>
+    </div>
+    <div class="services-grid reveal-stagger">
+
+      <div class="service-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-3-3a1 1 0 011.4-1.4L7 12.6l6.3-6.3a1 1 0 011.4 0z"/><path d="M19 3l1.5 3L23 7.5 20.5 9 19 12l-1.5-3L15 7.5 17.5 6z"/></svg></div>
+        <h3>Website Fix-Up</h3>
+        <div class="service-price">&pound;150&ndash;&pound;350</div>
+        <div class="service-turn">Turnaround: 2&ndash;4 days</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Speed &amp; performance fixes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Broken contact/booking form repairs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Mobile responsiveness fixes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Content &amp; image updates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Google Business Profile linking</li>
+        </ul>
+        <p class="best-for"><strong>Best for:</strong> businesses with an existing site that&rsquo;s slow, broken or looking dated.</p>
+        <a href="#contact" class="btn btn-navy btn-block">Get a Fix-Up Quote</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 14h4M7 17h7"/></svg></div>
+        <h3>Custom Website Build</h3>
+        <div class="service-price">&pound;600&ndash;&pound;1,200</div>
+        <div class="service-turn">Turnaround: 10&ndash;14 days</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 5&ndash;8 page, mobile-first site</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Booking &amp; contact forms</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Photo gallery</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Local SEO setup</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hosting &amp; domain handled</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 1 round of revisions</li>
+        </ul>
+        <div class="addon-note">Add-on: online shop / e-commerce &mdash; +&pound;300&ndash;&pound;600</div>
+        <p class="best-for"><strong>Best for:</strong> businesses that need a proper website from scratch, built around how you actually work.</p>
+        <a href="#contact" class="btn btn-gold btn-block">Start My Build</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+        <h3>Business Automation</h3>
+        <div class="service-price">from &pound;150</div>
+        <div class="service-turn">Turnaround: agreed at quote stage</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> WhatsApp auto-replies</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Invoice automation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Stock alerts</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Review-request flows</li>
+        </ul>
+        <p class="best-for"><strong>Best for:</strong> businesses drowning in admin who want the repetitive stuff handled automatically.</p>
+        <a href="#contact" class="btn btn-navy btn-block">Automate My Business</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Our work</span>
+      <h2 class="underline">See it in action</h2>
+      <p>A live client site, studio builds we&rsquo;ve made to demonstrate our capability, and existing portfolio pieces.</p>
+    </div>
+
+    <div class="featured-card reveal">
+      <div class="featured-card-inner">
+        <div>
+          <span class="badge badge-live">Live Site</span>
+          <h3>techandsolutions.co.uk</h3>
+          <ul class="story-steps">
+            <li><b>Problem:</b> needed a fast, credible online presence so customers searching online could find and trust the business.</li>
+            <li><b>Solution:</b> a clean, modern site built and deployed on fast, reliable hosting infrastructure.</li>
+            <li><b>Delivered:</b> a live, working site at techandsolutions.co.uk that visitors can check right now.</li>
+          </ul>
+          <a href="https://techandsolutions.co.uk" target="_blank" rel="noopener" class="btn btn-navy">Visit Live Site &rarr;</a>
+        </div>
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-line short"></div>
+            <div class="mock-line wide"></div>
+            <div class="mock-block gold"></div>
+            <div class="mock-line med"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-grid reveal-stagger">
+
+      <div class="story-card">
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <img src="assets/work/birchwood-plumbing.jpg" alt="Product visual from the Birchwood Plumbing Studio Build site" class="mock-photo" loading="lazy" width="900" height="506">
+        </div>
+        <div class="story-card-body">
+          <span class="badge badge-studio">Studio Build</span>
+          <h4>Birchwood Plumbing</h4>
+          <p class="challenge"><b>Challenge:</b> trade businesses lose jobs to competitors who offer instant quotes and online booking.</p>
+          <p class="challenge"><b>What we built:</b> a fast, mobile-first plumbing site with an instant quote calculator, project gallery and customer review section.</p>
+          <div class="chip-row">
+            <span class="chip">Quote Calculator</span>
+            <span class="chip">Photo Gallery</span>
+            <span class="chip">Mobile-First</span>
+          </div>
+          <p class="story-result"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Delivered: a fast, professional plumbing site ready to turn visitors into booked jobs.</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <img src="assets/work/toast-marketing.jpg" alt="Visual asset from the Toast Marketing Studio Build site" class="mock-photo" loading="lazy" width="700" height="736">
+        </div>
+        <div class="story-card-body">
+          <span class="badge badge-studio">Studio Build</span>
+          <h4>Toast Marketing</h4>
+          <p class="challenge"><b>Challenge:</b> service businesses struggle to explain their process and results clearly to new visitors.</p>
+          <p class="challenge"><b>What we built:</b> a growth-agency style site with a clear step-by-step process, services breakdown and FAQ.</p>
+          <div class="chip-row">
+            <span class="chip">Process Timeline</span>
+            <span class="chip">Services Breakdown</span>
+            <span class="chip">FAQ Section</span>
+          </div>
+          <p class="story-result"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Delivered: a clear, professional site that explains the agency's process at a glance.</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-line short"></div>
+            <div class="mock-line med"></div>
+            <div class="mock-block"></div>
+          </div>
+        </div>
+        <div class="story-card-body">
+          <span class="badge badge-portfolio">Portfolio</span>
+          <h4>My Punjab</h4>
+          <p class="challenge"><b>Challenge:</b> independent restaurants relying on printed menus and phone orders are hard for new customers to find or check out online.</p>
+          <p class="challenge"><b>What we built:</b> a restaurant website with a browsable menu, photos and clear contact details, so customers can find the place and decide what to order before they even call.</p>
+          <div class="chip-row">
+            <span class="chip">Restaurant</span>
+            <span class="chip">Menu Page</span>
+            <span class="chip">Mobile-Friendly</span>
+          </div>
+          <p class="story-result"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Delivered: a professional, menu-led site ready to bring in new customers.</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-line short"></div>
+            <div class="mock-line wide"></div>
+            <div class="mock-block gold"></div>
+          </div>
+        </div>
+        <div class="story-card-body">
+          <span class="badge badge-portfolio">Portfolio</span>
+          <h4>Fonetech</h4>
+          <p class="challenge"><b>Challenge:</b> repair shops need to show what they fix and how to reach them before a customer trusts them with a drop-off.</p>
+          <p class="challenge"><b>What we built:</b> a services-led site listing the repairs on offer with straightforward, easy-to-find contact details.</p>
+          <div class="chip-row">
+            <span class="chip">Repair Shop</span>
+            <span class="chip">Services Page</span>
+            <span class="chip">Contact-Focused</span>
+          </div>
+          <p class="story-result"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Delivered: a straightforward repair-shop site that builds trust before drop-off.</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div class="mock-browser">
+          <div class="mock-bar"><span></span><span></span><span></span></div>
+          <div class="mock-body">
+            <div class="mock-line short"></div>
+            <div class="mock-line med"></div>
+            <div class="mock-line wide"></div>
+          </div>
+        </div>
+        <div class="story-card-body">
+          <span class="badge badge-portfolio">Portfolio</span>
+          <h4>ERP / Finance / Stock System</h4>
+          <p class="challenge"><b>Challenge:</b> growing businesses tracking stock and finances across spreadsheets and paper find it doesn't scale, and mistakes creep in.</p>
+          <p class="challenge"><b>What we built:</b> an internal system for tracking finances and stock levels in one place, replacing the spreadsheet juggling.</p>
+          <div class="chip-row">
+            <span class="chip">Internal Tool</span>
+            <span class="chip">Stock Control</span>
+            <span class="chip">Finance Tracking</span>
+          </div>
+          <p class="portfolio-note">Internal system &mdash; not publicly linked.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">How we work</span>
+      <h2 class="underline">Four simple steps</h2>
+      <p>The managed process that means you never have to chase anyone yourself.</p>
+    </div>
+    <div class="process-line reveal-stagger">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Free Audit</h3>
+        <p>We review your current site or needs and send you a plain-English report &mdash; no jargon, no pressure.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Fixed Quote</h3>
+        <p>One price, agreed scope, no surprises. You know exactly what you&rsquo;re paying before anything starts.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>We Build &amp; Manage</h3>
+        <p>Our vetted developers build it, we QA everything ourselves, and you deal with one person only &mdash; us.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Launch &amp; Support</h3>
+        <p>We hand it over, train you to use it, and offer an optional &pound;50&ndash;&pound;100/month care plan.</p>
+      </div>
+    </div>
+    <p class="process-footer reveal">You never chase a freelancer. That&rsquo;s our job.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="problems" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Pricing</span>
+      <h2 class="underline">Fixed prices, no surprises</h2>
+      <p>Every price below is agreed in writing before we start any work.</p>
+    </div>
+    <div class="pricing-grid reveal-stagger">
+
+      <div class="price-card">
+        <h3>Website Fix-Up</h3>
+        <div class="service-price">&pound;150&ndash;&pound;350</div>
+        <div class="service-turn">Turnaround: 2&ndash;4 days</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Speed &amp; form fixes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Mobile responsiveness</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Content updates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Google Business linking</li>
+        </ul>
+        <a href="#contact" class="btn btn-navy btn-block">Get a Quote</a>
+      </div>
+
+      <div class="price-card popular">
+        <span class="ribbon">Most Popular</span>
+        <h3>Custom Build</h3>
+        <div class="service-price">&pound;600&ndash;&pound;1,200</div>
+        <div class="service-turn">Turnaround: 10&ndash;14 days</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 5&ndash;8 page mobile-first site</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Booking &amp; contact forms</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Gallery &amp; local SEO</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hosting &amp; domain handled</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold btn-block">Start My Build</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Care Plan</h3>
+        <div class="service-price">&pound;50&ndash;&pound;100<span style="font-size:.9rem;">/mo</span></div>
+        <div class="service-turn">Ongoing, cancel anytime</div>
+        <ul class="check-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Hosting &amp; monitoring</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Content updates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Security &amp; backups</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Priority support</li>
+        </ul>
+        <a href="#contact" class="btn btn-navy btn-block">Ask About Care Plans</a>
+      </div>
+
+    </div>
+    <p class="pricing-note reveal">All prices fixed and agreed before work starts. No hidden costs. Not VAT registered &mdash; no VAT added.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-wrap">
+    <div class="about-mark reveal">
+      <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1E2761"/><text x="32" y="42" font-family="Georgia,serif" font-size="26" font-weight="bold" fill="#C9A24B" text-anchor="middle">GD</text></svg>
+    </div>
+    <div class="about-text reveal">
+      <span class="section-label">About us</span>
+      <h2>Why business owners work with us</h2>
+      <p>Gwent Digital is run by two Newport locals. Instead of hiring one freelancer and hoping for the best, we manage a small team of vetted developers on your behalf &mdash; so you get agency-quality work at a fair, fixed price, with one point of contact from start to finish.</p>
+      <p>No handing you off between people. No chasing anyone for updates. Just a plain-English point of contact who's on the hook until you're happy.</p>
+      <div class="stat-chips">
+        <span class="stat-chip">Newport, Wales based</span>
+        <span class="stat-chip">Fixed pricing</span>
+        <span class="stat-chip">GDPR-compliant builds</span>
+        <span class="stat-chip">Response within 24h</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="problems" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="underline">Questions we get asked a lot</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <button class="faq-q" aria-expanded="true">How much does a website cost?<span class="plus"></span></button>
+        <div class="faq-a"><p>It depends what you need. A Website Fix-Up starts at &pound;150; a full Custom Website Build is typically &pound;600&ndash;&pound;1,200. We always agree a fixed price with you before any work starts &mdash; no surprises.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does it take?<span class="plus"></span></button>
+        <div class="faq-a"><p>A Fix-Up usually takes 2&ndash;4 days. A full Custom Build typically takes 10&ndash;14 days from our kick-off call, depending on how quickly we get your content and feedback.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I own my website?<span class="plus"></span></button>
+        <div class="faq-a"><p><b>Yes.</b> The domain, hosting and code are all yours. There's no lock-in &mdash; if you ever want to leave, everything moves with you.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What if something breaks after launch?<span class="plus"></span></button>
+        <div class="faq-a"><p>Every build includes an initial support period, and our optional Care Plan (&pound;50&ndash;&pound;100/month) covers ongoing updates, monitoring and fixes, so you're never stuck.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you work outside Newport?<span class="plus"></span></button>
+        <div class="faq-a"><p><b>Yes</b> &mdash; we work across all of Gwent and South Wales, and we're happy to visit your shop or site in person where it helps.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do payments work?<span class="plus"></span></button>
+        <div class="faq-a"><p>Simple: 50% to get started, 50% on completion. No hidden extras &mdash; the price we quote is the price you pay.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" style="background:rgba(255,255,255,.14);color:var(--ice);">Get in touch</span>
+      <h2 class="underline" style="color:var(--white);">Get Your Free Website Audit</h2>
+      <p>Tell us a bit about your business and we'll send back a plain-English report &mdash; no obligation.</p>
+    </div>
+    <div class="contact-wrap reveal">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="visually-hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+        <div class="form-status" id="form-status"></div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Name *</label>
+            <input type="text" id="f-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-business">Business name *</label>
+            <input type="text" id="f-business" name="business" required autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-phone">Phone *</label>
+            <input type="tel" id="f-phone" name="phone" required autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="f-email">Email *</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-need">What do you need? *</label>
+          <select id="f-need" name="need" required>
+            <option value="">Please choose one&hellip;</option>
+            <option>Fix my site</option>
+            <option>New website</option>
+            <option>Automation</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-message">Tell us a bit more</label>
+          <textarea id="f-message" name="message" rows="4"></textarea>
+        </div>
+        <label class="field-check">
+          <input type="checkbox" required name="gdpr-consent">
+          <span>We only use your details to reply to your enquiry. No marketing lists. See our <a href="#privacy" id="privacy-link" style="color:var(--gold-dark);font-weight:bold;">Privacy Policy</a>.</span>
+        </label>
+        <button type="submit" class="btn btn-gold btn-block">Send My Enquiry</button>
+      </form>
+      <div class="contact-side">
+        <div class="contact-option">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><a href="mailto:hello@gwentdigital.co.uk">hello@gwentdigital.co.uk</a><p>We reply within 24 hours.</p></div>
+        </div>
+        <div class="contact-option">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l2-4-5-2-2 2c-2-1-4-3-5-5l2-2-2-5z"/></svg></div>
+          <div><a href="tel:+447405376702">+44 7405 376702</a><p>Call or WhatsApp &mdash; same number.</p></div>
+        </div>
+        <div class="contact-option">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 20l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+          <div><a href="#contact">Prefer to talk?</a><p>We'll come to your shop &mdash; we're local.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Gwent Digital — home">
+          <img src="1000002614.png" alt="" aria-hidden="true" class="logo-img" height="36"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+          <svg class="logo-fallback" aria-hidden="true" style="display:none" viewBox="0 0 64 64" height="36" width="36">
+            <rect width="64" height="64" rx="14" fill="#C9A24B"/><text x="32" y="42" font-family="Georgia,serif" font-size="26" font-weight="bold" fill="#1E2761" text-anchor="middle">GD</text>
+          </svg>
+          <span class="brand-name">Gwent Digital</span>
+        </a>
+        <p>Websites &amp; automation for Newport's independent businesses. Managed end-to-end, one point of contact.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Website Fix-Up</a></li>
+          <li><a href="#services">Custom Website Build</a></li>
+          <li><a href="#services">Business Automation</a></li>
+          <li><a href="#pricing">Care Plan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@gwentdigital.co.uk">hello@gwentdigital.co.uk</a></li>
+          <li><a href="tel:+447405376702">+44 7405 376702</a></li>
+          <li>Newport, Wales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gwent Digital &middot; Newport, Wales &middot; gwentdigital.co.uk</span>
+      <span><a href="#privacy" id="privacy-link-footer">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- PRIVACY MODAL -->
+<div class="modal-overlay" id="privacy-modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+    <button class="modal-close" id="privacy-close" aria-label="Close privacy policy">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <h2 id="privacy-title">Privacy Policy</h2>
+    <p>Plain English, no legal jargon. Here's exactly what happens to your details.</p>
+    <h3>What we collect</h3>
+    <p>When you use our contact form, we collect your name, business name, phone number, email address, what you need, and any message you write.</p>
+    <h3>Why we collect it</h3>
+    <p>Only to reply to your enquiry and provide you with a quote or audit. We do not add you to any marketing list or share your details with third parties for marketing.</p>
+    <h3>How it's stored</h3>
+    <p>Form submissions are handled securely by our form provider and delivered to our email inbox. We keep enquiry details only as long as needed to respond and, if you become a client, for our normal business records.</p>
+    <h3>Your rights</h3>
+    <p>You can ask us to see, correct or delete your details at any time by emailing <a href="mailto:hello@gwentdigital.co.uk">hello@gwentdigital.co.uk</a>. You also have the right to complain to the <a href="https://ico.org.uk" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a> if you're unhappy with how we've handled your data.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // Navbar shadow on scroll
+  var navbar = document.getElementById('navbar');
+  function onScroll(){
+    if (window.scrollY > 8) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile menu
+  var hamburger = document.getElementById('hamburger');
+  var mobilePanel = document.getElementById('mobile-panel');
+  function closeMenu(){
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+    hamburger.setAttribute('aria-label','Open menu');
+    mobilePanel.classList.remove('open');
+  }
+  function openMenu(){
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded','true');
+    hamburger.setAttribute('aria-label','Close menu');
+    mobilePanel.classList.add('open');
+  }
+  hamburger.addEventListener('click', function(){
+    if (mobilePanel.classList.contains('open')) closeMenu(); else openMenu();
+  });
+  mobilePanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  // Scroll reveal
+  var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in-view'); });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    function setHeight(){
+      answer.style.maxHeight = item.classList.contains('open') ? answer.scrollHeight + 'px' : '0px';
+    }
+    setHeight();
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        if (openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-q').setAttribute('aria-expanded','false');
+          openItem.querySelector('.faq-a').style.maxHeight = '0px';
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      setHeight();
+    });
+    window.addEventListener('resize', function(){ if (item.classList.contains('open')) setHeight(); });
+  });
+
+  // Privacy modal
+  var modal = document.getElementById('privacy-modal');
+  var modalClose = document.getElementById('privacy-close');
+  function openModal(){ modal.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+  ['privacy-link','privacy-link-footer'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('click', function(e){ e.preventDefault(); openModal(); });
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+  if (window.location.hash === '#privacy') openModal();
+
+  // Contact form: AJAX submit to Netlify, graceful fallback to normal POST
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch('/', { method:'POST', body:new URLSearchParams(data).toString(), headers:{'Content-Type':'application/x-www-form-urlencoded'} })
+      .then(function(){
+        status.textContent = "Thanks — your enquiry is in. We'll reply within 24 hours.";
+        status.className = 'form-status show ok';
+        form.reset();
+      })
+      .catch(function(){
+        status.textContent = "Something went wrong sending that. Please email hello@gwentdigital.co.uk directly.";
+        status.className = 'form-status show err';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>

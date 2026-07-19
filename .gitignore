@@ -1,0 +1,9 @@
+# Separate, unrelated project folders (own codebases, not part of the site)
+/Task UK/
+/birchwood-plumbing-redesign/
+/gwent-digital-site/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
