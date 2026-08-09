@@ -1,31 +1,52 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CLIENT_PROJECTS } from "@/lib/work";
 
-// No case study is written up with client permission yet (PRD v2 §8.3), and the only
-// "work" images inherited from the legacy site turned out to be generic stock renders
-// with no connection to actual client work — so this stays text-only rather than
-// showing visuals that would misleadingly imply real screenshots. Replace with named,
-// permissioned case studies (and real screenshots) in Phase 2.
+// Short, factual entries only — no invented problem/outcome narrative until real
+// write-ups and (where needed) client permission exist. See src/lib/work.ts and
+// PRD v2 §8.3.
 export function WhatWeBuild() {
   return (
     <section id="work" className="on-ink bg-background py-20 text-foreground md:py-28">
       <div className="container-site">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="eyebrow text-oxide">What we&rsquo;ve built</p>
+          <p className="eyebrow text-oxide">Recent work</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-            Real work, coming soon
+            Real businesses, real builds
           </h2>
           <p className="mt-4 text-foreground/70">
-            We&rsquo;re writing up full case studies with client permission — real
-            screenshots, real problems, what actually changed. Rather than show you
-            placeholder images in the meantime, we&rsquo;d rather just tell you: ask us
-            directly and we&rsquo;ll walk you through recent work.
+            Full write-ups with screenshots are coming. For now, here&rsquo;s who we&rsquo;ve
+            built for.
           </p>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+          {CLIENT_PROJECTS.map((p) => (
+            <div
+              key={p.slug}
+              className="rounded border border-foreground/15 p-6 transition-colors hover:border-oxide"
+            >
+              <p className="eyebrow text-silt">{p.sector}</p>
+              <h3 className="mt-2 font-display text-lg font-bold">{p.name}</h3>
+              <p className="mt-2 text-sm text-foreground/70">{p.description}</p>
+              {p.url && (
+                <a
+                  href={p.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-oxide hover:underline"
+                >
+                  Visit site <ArrowUpRight className="size-3.5" aria-hidden />
+                </a>
+              )}
+            </div>
+          ))}
         </div>
 
         <div className="mt-10 text-center">
           <Button asChild variant="outline" className="border-foreground/30 text-foreground">
-            <Link href="/contact">Ask to see our work</Link>
+            <Link href="/work">See all work</Link>
           </Button>
         </div>
       </div>

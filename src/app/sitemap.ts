@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://gwentdigital.co.uk";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/contact", "/privacy", "/cookies", "/terms"];
+  const routes = ["", "/work", "/contact", "/privacy", "/cookies", "/terms"];
   return routes.map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
