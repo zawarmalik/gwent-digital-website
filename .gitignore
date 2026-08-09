@@ -1,9 +1,40 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+.vscode/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
 # Separate, unrelated project folders (own codebases, not part of the site)
 /Task UK/
 /birchwood-plumbing-redesign/
 /gwent-digital-site/
 
-# OS / editor
-.DS_Store
-Thumbs.db
-.vscode/
+.vercel
