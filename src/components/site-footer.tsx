@@ -20,7 +20,7 @@ export function SiteFooter() {
         <nav aria-label="Footer navigation">
           <h2 className="eyebrow text-foreground/60">Site</h2>
           <ul className="mt-4 space-y-3 text-sm">
-            <li><Link href="/#services" className="transition-colors hover:text-oxide">Services</Link></li>
+            <li><Link href="/services" className="transition-colors hover:text-oxide">Services</Link></li>
             <li><Link href="/work" className="transition-colors hover:text-oxide">Work</Link></li>
             <li><Link href="/#pricing" className="transition-colors hover:text-oxide">Pricing</Link></li>
             <li><Link href="/#about" className="transition-colors hover:text-oxide">About</Link></li>

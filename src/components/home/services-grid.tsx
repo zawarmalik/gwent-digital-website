@@ -1,27 +1,6 @@
 import Link from "next/link";
-import {
-  Globe,
-  ShoppingCart,
-  Bot,
-  Database,
-  BarChart3,
-  Search,
-  Palette,
-  LifeBuoy,
-  type LucideIcon,
-} from "lucide-react";
 import { DEPARTMENTS } from "@/lib/departments";
-
-const ICONS: Record<string, LucideIcon> = {
-  "web-design": Globe,
-  ecommerce: ShoppingCart,
-  "ai-automation": Bot,
-  "custom-systems-erp": Database,
-  "data-analytics": BarChart3,
-  "seo-local-search": Search,
-  "branding-design": Palette,
-  "support-maintenance": LifeBuoy,
-};
+import { DEPARTMENT_ICONS } from "@/lib/department-icons";
 
 export function ServicesGrid() {
   return (
@@ -39,11 +18,11 @@ export function ServicesGrid() {
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {DEPARTMENTS.map((dept) => {
-          const Icon = ICONS[dept.slug];
+          const Icon = DEPARTMENT_ICONS[dept.slug];
           return (
             <Link
               key={dept.slug}
-              href={`/contact?service=${dept.slug}`}
+              href={`/services/${dept.slug}`}
               className="group flex flex-col rounded border border-border bg-card p-6 transition-[border-color,box-shadow] hover:border-oxide hover:shadow-[0_4px_20px_-8px_rgba(16,23,28,0.18)]"
             >
               <Icon className="size-6 text-oxide" aria-hidden />
@@ -55,7 +34,7 @@ export function ServicesGrid() {
                 ))}
               </ul>
               <span className="mt-4 text-xs font-medium text-oxide opacity-0 transition-opacity group-hover:opacity-100">
-                Ask about this &rarr;
+                Learn more &rarr;
               </span>
             </Link>
           );

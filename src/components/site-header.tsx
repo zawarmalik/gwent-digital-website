@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/sheet";
 
 const NAV_LINKS = [
-  { href: "/#services", label: "Services" },
+  { href: "/services", label: "Services" },
   { href: "/work", label: "Work" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/#about", label: "About" },

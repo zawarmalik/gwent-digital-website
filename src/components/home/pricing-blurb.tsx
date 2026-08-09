@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export function PricingBlurb() {
+type Props = {
+  /** Department slug to pre-select on the contact form, e.g. "web-design". */
+  serviceSlug?: string;
+};
+
+export function PricingBlurb({ serviceSlug }: Props = {}) {
+  const href = serviceSlug ? `/contact?service=${serviceSlug}` : "/contact";
+
   return (
     <section id="pricing" className="on-ink bg-background py-20 text-foreground md:py-28">
       <div className="container-site">
@@ -18,7 +25,7 @@ export function PricingBlurb() {
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-oxide text-paper hover:bg-oxide/90">
-              <Link href="/contact">Get a free quote</Link>
+              <Link href={href}>Get a free quote</Link>
             </Button>
           </div>
         </div>
