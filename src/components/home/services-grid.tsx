@@ -44,7 +44,7 @@ export function ServicesGrid() {
             <Link
               key={dept.slug}
               href={`/contact?service=${dept.slug}`}
-              className="group flex flex-col rounded border border-border bg-card p-6 transition-colors hover:border-oxide"
+              className="group flex flex-col rounded border border-border bg-card p-6 transition-[border-color,box-shadow] hover:border-oxide hover:shadow-[0_4px_20px_-8px_rgba(16,23,28,0.18)]"
             >
               <Icon className="size-6 text-oxide" aria-hidden />
               <h3 className="mt-4 font-display text-base font-bold text-ink">{dept.name}</h3>

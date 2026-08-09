@@ -20,20 +20,20 @@ export function SiteFooter() {
         <nav aria-label="Footer navigation">
           <h2 className="eyebrow text-foreground/60">Site</h2>
           <ul className="mt-4 space-y-3 text-sm">
-            <li><Link href="/#services" className="hover:text-oxide">Services</Link></li>
-            <li><Link href="/#work" className="hover:text-oxide">Work</Link></li>
-            <li><Link href="/#pricing" className="hover:text-oxide">Pricing</Link></li>
-            <li><Link href="/#about" className="hover:text-oxide">About</Link></li>
-            <li><Link href="/contact" className="hover:text-oxide">Contact</Link></li>
+            <li><Link href="/#services" className="transition-colors hover:text-oxide">Services</Link></li>
+            <li><Link href="/#work" className="transition-colors hover:text-oxide">Work</Link></li>
+            <li><Link href="/#pricing" className="transition-colors hover:text-oxide">Pricing</Link></li>
+            <li><Link href="/#about" className="transition-colors hover:text-oxide">About</Link></li>
+            <li><Link href="/contact" className="transition-colors hover:text-oxide">Contact</Link></li>
           </ul>
         </nav>
 
         <nav aria-label="Legal">
           <h2 className="eyebrow text-foreground/60">Legal</h2>
           <ul className="mt-4 space-y-3 text-sm">
-            <li><Link href="/privacy" className="hover:text-oxide">Privacy policy</Link></li>
-            <li><Link href="/cookies" className="hover:text-oxide">Cookie policy</Link></li>
-            <li><Link href="/terms" className="hover:text-oxide">Terms of service</Link></li>
+            <li><Link href="/privacy" className="transition-colors hover:text-oxide">Privacy policy</Link></li>
+            <li><Link href="/cookies" className="transition-colors hover:text-oxide">Cookie policy</Link></li>
+            <li><Link href="/terms" className="transition-colors hover:text-oxide">Terms of service</Link></li>
           </ul>
         </nav>
 
@@ -41,12 +41,12 @@ export function SiteFooter() {
           <h2 className="eyebrow text-foreground/60">Contact</h2>
           <ul className="mt-4 space-y-3 text-sm">
             <li>
-              <a href={`mailto:${EMAIL}`} className="hover:text-oxide">
+              <a href={`mailto:${EMAIL}`} className="transition-colors hover:text-oxide">
                 {EMAIL}
               </a>
             </li>
             <li>
-              <a href="tel:+447405376702" className="hover:text-oxide">
+              <a href="tel:+447405376702" className="transition-colors hover:text-oxide">
                 {PHONE_DISPLAY}
               </a>
             </li>
@@ -56,7 +56,7 @@ export function SiteFooter() {
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="hover:text-oxide"
+                className="transition-colors hover:text-oxide"
               >
                 Facebook
               </a>

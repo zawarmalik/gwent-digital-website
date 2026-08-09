@@ -36,3 +36,5 @@ next-env.d.ts
 /Task UK/
 /birchwood-plumbing-redesign/
 /gwent-digital-site/
+
+.vercel

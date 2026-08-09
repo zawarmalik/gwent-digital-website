@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function FinalCta() {
   return (
-    <section className="on-ink bg-background py-24 text-foreground">
+    <section className="on-ink bg-background py-20 text-foreground md:py-28">
       <div className="container-site text-center">
         <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
           Tell us what&rsquo;s not working.

@@ -38,13 +38,13 @@ export default async function ContactPage({ searchParams }: Props) {
             <ul className="mt-4 space-y-3 text-sm text-ink/80">
               <li className="flex items-center gap-2">
                 <Mail className="size-4 text-oxide" aria-hidden />
-                <a href="mailto:hello@gwentdigital.co.uk" className="hover:text-oxide">
+                <a href="mailto:hello@gwentdigital.co.uk" className="transition-colors hover:text-oxide">
                   hello@gwentdigital.co.uk
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="size-4 text-oxide" aria-hidden />
-                <a href="tel:+447405376702" className="hover:text-oxide">
+                <a href="tel:+447405376702" className="transition-colors hover:text-oxide">
                   07405 376702
                 </a>
               </li>
@@ -61,7 +61,7 @@ export default async function ContactPage({ searchParams }: Props) {
 
           <div className="rounded border border-border bg-muted/40 p-5 text-sm text-ink/70">
             We only use your details to reply to your enquiry — no marketing lists. See our{" "}
-            <a href="/privacy" className="underline hover:text-oxide">
+            <a href="/privacy" className="underline transition-colors hover:text-oxide">
               Privacy Policy
             </a>
             .

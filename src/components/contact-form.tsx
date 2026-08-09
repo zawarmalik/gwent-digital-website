@@ -103,7 +103,7 @@ export function ContactForm({ defaultService }: Props) {
             id="service"
             {...register("service")}
             aria-invalid={!!errors.service}
-            className="mt-1 flex h-9 w-full rounded border border-input bg-transparent px-3 py-1 text-sm shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+            className="mt-1 flex h-8 w-full min-w-0 cursor-pointer rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30"
           >
             <option value="">Choose one&hellip;</option>
             {SERVICE_OPTIONS.map((o) => (
@@ -121,7 +121,7 @@ export function ContactForm({ defaultService }: Props) {
           <select
             id="budget"
             {...register("budget")}
-            className="mt-1 flex h-9 w-full rounded border border-input bg-transparent px-3 py-1 text-sm shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+            className="mt-1 flex h-8 w-full min-w-0 cursor-pointer rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30"
           >
             <option value="">Prefer not to say&hellip;</option>
             {BUDGET_OPTIONS.map((o) => (
@@ -156,7 +156,7 @@ export function ContactForm({ defaultService }: Props) {
         />
         <Label htmlFor="consent" className="text-sm font-normal text-ink/80">
           I agree to Gwent Digital contacting me about my enquiry, in line with the{" "}
-          <a href="/privacy" className="underline hover:text-oxide">
+          <a href="/privacy" className="underline transition-colors hover:text-oxide">
             Privacy Policy
           </a>
           . *

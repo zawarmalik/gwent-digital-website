@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 const DEMOS = [
   {
     image: "/work/birchwood-plumbing.jpg",
-    alt: "Website redesign screenshot for a South Wales trade business",
+    alt: "Visual from a website redesign project for a South Wales trade business",
     label: "Trade services — website redesign",
   },
   {
     image: "/work/toast-marketing.jpg",
-    alt: "Marketing site screenshot",
+    alt: "Visual from a marketing site build",
     label: "Marketing site build",
   },
 ];
@@ -28,16 +28,24 @@ export function WhatWeBuild() {
             Real work, in progress
           </h2>
           <p className="mt-4 text-foreground/70">
-            We&rsquo;re writing up full case studies with client permission — for now, here&rsquo;s
-            a look at recent design work. Full write-ups land soon.
+            We&rsquo;re writing up full case studies with client permission. In the meantime,
+            here&rsquo;s a look at recent design work.
           </p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {DEMOS.map((demo) => (
-            <div key={demo.image} className="overflow-hidden rounded border border-foreground/15">
-              <div className="relative aspect-[16/10] w-full">
-                <Image src={demo.image} alt={demo.alt} fill className="object-cover" />
+            <div
+              key={demo.image}
+              className="group overflow-hidden rounded border border-foreground/15"
+            >
+              <div className="relative aspect-[16/10] w-full overflow-hidden">
+                <Image
+                  src={demo.image}
+                  alt={demo.alt}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
               <p className="border-t border-foreground/15 p-4 text-sm font-medium">
                 {demo.label}
